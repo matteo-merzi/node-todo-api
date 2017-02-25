@@ -251,9 +251,6 @@ describe('POST /users', () => {
                 password: 'asd'
             })
             .expect(400)
-            // .expect((res) => {
-            //     expect(res.body).toEqual({});
-            // })
             .end(done);
     });
 
@@ -265,9 +262,6 @@ describe('POST /users', () => {
                 password: '123asd'
             })
             .expect(400)
-            // .expect((res) => {
-            //     expect(res.body).toEqual({});
-            // })
             .end(done);
     });
 });
